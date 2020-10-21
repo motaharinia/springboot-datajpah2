@@ -22,13 +22,24 @@ further references:
 - http://www.h2database.com/html/main.html  
 
 
-### Project descriptions :
+### Project Descriptions :
 please see application.properties files in resources folder and select a active profile "dev" or "com" to run project. you can check test methods too.  
 
 to manage embedded h2 database open <a href='http://localhost:8080/h2-console/' target='_blank'>http://localhost:8080/h2-console/</a> with 
 - username:sa
 - password: (blank password) 
 - datasourceUrl: jdbc:h2:mem:motahariniadb'
+    
+### IntellliJ IDEA Configurations :
+- IntelijIDEA: Help -> Edit Custom Vm Options -> add these two line:
+    - -Dfile.encoding=UTF-8
+    - -Dconsole.encoding=UTF-8
+- IntelijIDEA: File -> Settings -> Editor -> File Encodings-> Project Encoding: form "System default" to UTF-8. May be it affected somehow.
+- IntelijIDEA: File -> Settings -> Editor -> General -> Code Completion -> check "show the documentation popup in 500 ms"
+- IntelijIDEA: File -> Settings -> Editor -> General -> Auto Import -> check "Optimize imports on the fly (for current project)"
+- IntelijIDEA: File -> Settings -> Editor -> Color Scheme -> Color Scheme Font -> Scheme: Default -> uncheck "Show only monospaced fonts" and set font to "Tahoma"
+- IntelijIDEA: Run -> Edit Configuration -> Spring Boot -> XXXApplication -> Environment -> VM Options: -Dspring.profiles.active=dev
+
 <hr/>
 <a href="mailto:eng.motahari@gmail.com?"><img src="https://img.shields.io/badge/gmail-%23DD0031.svg?&style=for-the-badge&logo=gmail&logoColor=white"/></a>
 
