@@ -25,6 +25,10 @@ further references:
 ### Project descriptions :
 please see application.properties files in resources folder and select a active profile "dev" or "com" to run project. you can check test methods too.  
 
+to manage embedded h2 database open <a href='http://localhost:8080/h2-console/' target='_blank'>http://localhost:8080/h2-console/</a> with 
+- username:sa
+- password: (blank password) 
+- datasourceUrl: jdbc:h2:mem:motahariniadb'
 <hr/>
 <a href="mailto:eng.motahari@gmail.com?"><img src="https://img.shields.io/badge/gmail-%23DD0031.svg?&style=for-the-badge&logo=gmail&logoColor=white"/></a>
 
